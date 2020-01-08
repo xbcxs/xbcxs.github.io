@@ -34,25 +34,26 @@
 ## 命名示例
 **API组成： GET/POST [api分类][版本][命名空间][业务动作]**
 1. 获取书籍列表 GET /api/v1/book/list `行参数：查询参数`
-2. 获取书籍分页 GET /api/v1/book/page_list `行参数：size和page为分页参数`
+2. 获取书籍分页 GET /api/v1/book/page-list `行参数：size和page为分页参数`
 3. 获取书籍详情 GET /api/v1/book/info?id= `行参数：id为主键`
 4. 新增书籍资源 POST /api/v1/book/save `body参数：主键之外的参数`
-5. 新增返回结果 POST /api/v1/book/back_save `body参数：主键之外的参数`
-6. 批量新增书籍 POST /api/v1/book/batch_save `body参数：主键之外的参数`
+5. 新增返回结果 POST /api/v1/book/back-save `body参数：主键之外的参数`
+6. 批量新增书籍 POST /api/v1/book/batch-save `body参数：主键之外的参数`
 7. 修改书籍资源 POST /api/v1/book/update `body参数：更新依据主键id,以及其他参数`
-8. 批量修改书籍 POST /api/v1/book/batch_edite `body参数：更新依据主键 id,以及其他参数`
+8. 批量修改书籍 POST /api/v1/book/batch-edite `body参数：更新依据主键 id,以及其他参数`
 9. 删除书籍资源 POST /api/v1/book/delete `body参数：主键id`
-10. 批量删除书籍 POST /api/v1/book/batch_delete `body参数：主键id`
+10. 批量删除书籍 POST /api/v1/book/batch-delete `body参数：主键id`
 
 ## 请求格式规范
 
-1. 路径统一使用小写字母,多个单词使用`_`分割。
+1. 路径统一使用小写字母,多个单词使用`-`分割。
 2. 不使用PathVariable（/api/book/348737327）。`因为需要区分 GET /api/book/1, GET /api/book/2 是相同的 URL`。
 3. 请求Request Headers  
 普通数据:Content-Type:application/json;charset=UTF-8  
 文件数据:Content-Type:multipart/form-data
 4. 响应Response Headers  
 普通数据：Content-Type:application/json;charset=UTF-8
+5. URI的末尾不要添加“/”，多一个斜杠，语义完全不同，究竟是目录，还是资源。 
 
 ## 返回格式规范
 
@@ -97,9 +98,9 @@
 ## 相应状态码规范
 ### code
 请求处理业务状态
-- 200：请求处理成功。
-- 2：请求处理失败。
-- 3-99：请求处理失败，不通过状态码表示不同失败原因。
+- 200：请求处理成功。data返回：data内容
+- 500：服务武器错误。message提示：服务错误
+- !200&&!500：请求成功，message提示：message内容
 
 ### message
 请求处理消息，对应code的描述信息或异常信息。
