@@ -7,19 +7,19 @@
 服务化架构,HTTP/JSON调用
 
 # API场景分类
-## 需用户登录才能进行访问
+## 需用户登录才能进行访问 /api/web
 前端团队使用
 ```
 /api/
 ```
 
-## 不用登录即可访问的资源
+## 不用登录即可访问的资源 /api/open
 用于集成开发将/api/service/包装成/api/public/对外提供使用
 ```
 /api/public/
 ```
 
-## 内部微服务之间相互调用
+## 内部微服务之间相互调用 /api/rpc
 内部服务调用，不对外提供，不需要登录验证
 ```
 /api/service/
@@ -29,7 +29,6 @@
 
 # API规范
 > 参照restful等规约，根据团队情况定制了自用风格。  
-> 由于历史代码等原因无法使用PUT,DELETE等来区分API动作，因此除查询以外的动作都用POST涵盖了，为了做细分在命名最后部分允许采用动词描述加以区分。
 
 ## 命名示例
 **API组成： GET/POST [api分类][版本][命名空间][业务动作]**
@@ -39,10 +38,10 @@
 4. 新增书籍资源 POST /api/v1/book/save `body参数：主键之外的参数`
 5. 新增返回结果 POST /api/v1/book/back-save `body参数：主键之外的参数`
 6. 批量新增书籍 POST /api/v1/book/batch-save `body参数：主键之外的参数`
-7. 修改书籍资源 POST /api/v1/book/update `body参数：更新依据主键id,以及其他参数`
-8. 批量修改书籍 POST /api/v1/book/batch-edite `body参数：更新依据主键 id,以及其他参数`
-9. 删除书籍资源 POST /api/v1/book/delete `body参数：主键id`
-10. 批量删除书籍 POST /api/v1/book/batch-delete `body参数：主键id`
+7. 修改书籍资源 PUT  /api/v1/book/update `body参数：更新依据主键id,以及其他参数`
+8. 批量修改书籍 PUT  /api/v1/book/batch-edite `body参数：更新依据主键 id,以及其他参数`
+9. 删除书籍资源 DELETE /api/v1/book/delete `body参数：主键id`
+10. 批量删除书籍 DELETE /api/v1/book/batch-delete `body参数：主键id`
 
 ## 请求格式规范
 
@@ -57,7 +56,7 @@
 
 ## 返回格式规范
 
-1.基本相应格式
+1.基本响应格式
 
 ```
 {
@@ -68,7 +67,7 @@
 }
 ```
 
-2.分页相应格式
+2.分页响应格式
 ```
 {
     code: 200,
