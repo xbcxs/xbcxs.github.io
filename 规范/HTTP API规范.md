@@ -6,41 +6,47 @@
 # 使用场景
 服务化架构,HTTP/JSON调用
 
-# API场景分类
-## 需用户登录才能进行访问 /api/web
-前端团队使用
-```
-/api/
-```
+# 接口场景分类
 
 ## 不用登录即可访问的资源 /api/open
-用于集成开发将/api/service/包装成/api/public/对外提供使用
+对外开放的接口
 ```
-/api/public/
+/api/open/
 ```
 
+## 需用户登录才能进行访问 /api/web
+前端团队使用的接口
+```
+/api/web/
+```
+
+
+
 ## 内部微服务之间相互调用 /api/rpc
-内部服务调用，不对外提供，不需要登录验证
+内部服务调用
 ```
 /api/service/
 /api/rpc/
 /api/ws/
 ```
 
-# API规范
+## 基于工程环境二次开发调用
+内部代码调用
+```
+api.plugin
+```
+
+# HTTP API规范
 > 参照restful等规约，根据团队情况定制了自用风格。  
 
-/产品标识 /接口类型/顶级命名空间/../子级命名空间/资源事件描述
+## 命名规范
+/服务标识 /接口类型/顶级命名空间/../子级命名空间/资源事件描述
 
-命名空间描述：
-全部小写，名词。尽可能用一个单词描述，不满足的情况下多次连写（牺牲一定可阅读性）。例如： mywork
-
-资源事件描述：
-尽可能用一个单词描述，不满足的情况下多次用-连接（保证可阅读性）。尽可能用名词，实在困难的再用动作性词，多词力求简单无歧义。
-
+1. 服务标识：架构统一约定。  
+2. 命名空间描述：全部小写，尽可能用单个名词单词描述，不满足的情况下多词连写（牺牲一定可阅读性）。例如： mywork  
+3. 资源事件描述：全部小写，尽可能用单个名词单词描述，不满足的情况下多词用-连接（保证可阅读性）。例如：page-list
 
 ## 命名示例
-**API组成： GET/POST [api分类][版本][命名空间][业务动作]**
 1. 获取书籍列表 GET /api/v1/book/list `行参数：查询参数`
 2. 获取书籍分页 GET /api/v1/book/page-list `行参数：size和page为分页参数`
 3. 获取书籍详情 GET /api/v1/book/info?id= `行参数：id为主键`
@@ -52,16 +58,13 @@
 9. 删除书籍资源 DELETE /api/v1/book/delete `body参数：主键id`
 10. 批量删除书籍 DELETE /api/v1/book/batch-delete `body参数：主键id`
 
-## 请求格式规范
-
-1. 路径统一使用小写字母,多个单词使用`-`分割。
-2. 不使用PathVariable（/api/book/348737327）。`因为需要区分 GET /api/book/1, GET /api/book/2 是相同的 URL`。
-3. 请求Request Headers  
+## 请求规范
+1. 请求Request Headers  
 普通数据:Content-Type:application/json;charset=UTF-8  
 文件数据:Content-Type:multipart/form-data
-4. 响应Response Headers  
+2. 响应Response Headers  
 普通数据：Content-Type:application/json;charset=UTF-8
-5. URI的末尾不要添加“/”，多一个斜杠，语义完全不同，究竟是目录，还是资源。 
+3. URI的末尾不要添加“/”，多一个斜杠，语义完全不同，究竟是目录，还是资源。 
 
 ## 返回格式规范
 
@@ -101,7 +104,6 @@
     }
 }
 ```
-
 
 ## 相应状态码规范
 ### code
