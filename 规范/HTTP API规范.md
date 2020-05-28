@@ -59,7 +59,7 @@ eg：https://www.exemple.com/api/{v}/library/book
 5. 新增返回结果 POST /api/v1/book/back-save `body参数：主键之外的参数`
 6. 批量新增书籍 POST /api/v1/book/batch-save `body参数：主键之外的参数`
 7. 修改书籍资源 PUT  /api/v1/book/update `body参数：更新依据主键id,以及其他参数`
-8. 批量修改书籍 PUT  /api/v1/book/batch-edite `body参数：更新依据主键 id,以及其他参数`
+8. 批量修改书籍 PUT  /api/v1/book/batch-edit `body参数：更新依据主键 id,以及其他参数`
 9. 删除书籍资源 DELETE /api/v1/book/delete `body参数：主键id`
 10. 批量删除书籍 DELETE /api/v1/book/batch-delete `body参数：主键id`
 
