@@ -12,9 +12,9 @@ import java.util.List;
 /**
  * 根据blog目录机构生成对应Markdown标题结构
  */
-public class MarkdownTileBuilder {
+public class MarkdownTitleBuilder {
 
-    private Logger log = LoggerFactory.getLogger(MarkdownTileBuilder.class);
+    private Logger log = LoggerFactory.getLogger(MarkdownTitleBuilder.class);
 
     /**
      * 要解析的文件跟目录
@@ -26,11 +26,14 @@ public class MarkdownTileBuilder {
     private String readmeName;
 
     public static void main(String[] args) throws Exception {
-        MarkdownTileBuilder mtb = new MarkdownTileBuilder("blog", "readme.md");
+        MarkdownTitleBuilder mtb = new MarkdownTitleBuilder("blog", "readme.md");
         mtb.build();
+//        String str = "blog/技术/Java+Exception理解与运用.md";
+//
+//        System.out.println(URLEncoder.encode(str, "UTF-8"));
     }
 
-    public MarkdownTileBuilder(String blogDirName, String readmeName) {
+    public MarkdownTitleBuilder(String blogDirName, String readmeName) {
         this.blogDirName = blogDirName;
         this.readmeName = readmeName;
     }
@@ -72,7 +75,8 @@ public class MarkdownTileBuilder {
         if (files != null) {
             for (File f : files) {
                 String relativeFilePath = f.getPath().substring(f.getPath().indexOf(blogDirName));
-                relativeFilePath = URLEncoder.encode(relativeFilePath.replace(File.separator, "/"), "UTF-8");
+                relativeFilePath = relativeFilePath.replace(File.separator, "/");
+                relativeFilePath = URLEncoder.encode(relativeFilePath, "utf-8").replaceAll("\\+", "%20");
                 blogLists.add(formatTitle(level, f.getName(), f.isFile(), relativeFilePath));
                 if (f.isDirectory()) {
                     recursiveFile(f, level + 1, blogLists);
