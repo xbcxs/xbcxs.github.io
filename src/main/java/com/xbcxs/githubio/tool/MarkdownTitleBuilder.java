@@ -28,9 +28,6 @@ public class MarkdownTitleBuilder {
     public static void main(String[] args) throws Exception {
         MarkdownTitleBuilder mtb = new MarkdownTitleBuilder("blog", "readme.md");
         mtb.build();
-//        String str = "blog/技术/Java+Exception理解与运用.md";
-//
-//        System.out.println(URLEncoder.encode(str, "UTF-8"));
     }
 
     public MarkdownTitleBuilder(String blogDirName, String readmeName) {
