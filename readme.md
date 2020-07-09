@@ -4,6 +4,7 @@
   - [Spring事务中try-catch异常分析.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E4%BA%8B%E5%8A%A1%E4%B8%ADtry-catch%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
   - [接口幂等性.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E6%8E%A5%E5%8F%A3%E5%B9%82%E7%AD%89%E6%80%A7.md)
   - [简单版分布式选主.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%AE%80%E5%8D%95%E7%89%88%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%89%E4%B8%BB.md)
+  - [系统超时登录设计.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%B3%BB%E7%BB%9F%E8%B6%85%E6%97%B6%E7%99%BB%E5%BD%95%E8%AE%BE%E8%AE%A1.md)
 - [未分类](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB)
   - [HTTP请求参数为目录引发的安全问题.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB%2FHTTP%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E4%B8%BA%E7%9B%AE%E5%BD%95%E5%BC%95%E5%8F%91%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98.md)
   - [Oracle startup ORA-27102 out of memory.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB%2FOracle%20startup%20ORA-27102%20out%20of%20memory.md)
