@@ -77,7 +77,8 @@ openssl x509 -req -days 365 -in privatekey.csr -signkey privatekey.key -out priv
 ```
 # HTTPS server
 server {
-    listen       443 ssl;
+    # 系统默认443，这里设置为1234
+    listen       1234 ssl;
     server_name  localhost;
 
     ssl_certificate      C://nginx//ssl//privatekey.crt;  # 这个是证书的crt文件所在目录
@@ -98,7 +99,7 @@ server {
         proxy_send_timeout         240;
         proxy_read_timeout         240;
         # note, there is not SSL here! plain HTTP is used
-        proxy_pass http://tomcat;
+        proxy_pass http://127.0.0.1:8081;
     }
 }
 ```
@@ -129,36 +130,39 @@ start nginx.exe
 
 ## Tomcat增加对https支持
 
-1. Connector节点加入 redirectPort="443" proxyPort="443"
+1. Connector节点加入 redirectPort="1234" proxyPort="1234"
 2. 加入新的Value节点 
 3. 示例参考
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <Server port="8005" shutdown="SHUTDOWN">
-  <Service name="Catalina">
-    <Connector port="8080" protocol="HTTP/1.1"
-               connectionTimeout="20000"
-               redirectPort="443"
-               proxyPort="443"/>
+    <Service name="Catalina">
+        <Connector port="8081" protocol="HTTP/1.1"
+                   connectionTimeout="20000"
+                   redirectPort="1234"
+                   proxyPort="1234"/>
 
-    <Engine name="Catalina" defaultHost="localhost">
+        <Engine name="Catalina" defaultHost="localhost">
 
-      <Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true">
-            <Valve className="org.apache.catalina.valves.RemoteIpValve"
-                  remoteIpHeader="x-forwarded-for"
-                  remoteIpProxiesHeader="x-forwarded-by"
-                  protocolHeader="x-forwarded-proto"
-            />
-            <Context path="" docBase="/oschina/webapp" reloadable="false"/>
-      </Host>
-    </Engine>
-  </Service>
+            <Host name="localhost" appBase="webapps" unpackWARs="true" autoDeploy="true">
+                <Valve className="org.apache.catalina.valves.RemoteIpValve"
+                       internalProxies="172\.1[6-9]{1}\.\d{1,3}\.\d{1,3}|172\.2[0-9]{1}\.\d{1,3}\.\d{1,3}|172\.3[0-1]{1}\.\d{1,3}\.\d{1,3}"
+                       remoteIpHeader="x-forwarded-for"
+                       remoteIpProxiesHeader="x-forwarded-by"
+                       protocolHeader="x-forwarded-proto"
+                />
+                <Context path="" docBase="/home/test" reloadable="false"/>
+            </Host>
+        </Engine>
+    </Service>
 </Server>
 ```
+PS: 若服务器是172代理过来的ip，必须设置internalProxies属性，请参照tomcat7版本的问题。参考官网说明  
+http://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/catalina/valves/RemoteIpValve.html
 
 ## 参考
 
 https://www.cnblogs.com/micro-chen/p/11794248.html  
 https://www.cnblogs.com/zhanghaoh/p/5293158.html  
 https://www.cnblogs.com/swbzmx/p/8845810.html  
+http://tomcat.apache.org/tomcat-8.0-doc/api/org/apache/catalina/valves/RemoteIpValve.html  
