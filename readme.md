@@ -1,6 +1,7 @@
 - [技术](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E6%8A%80%E6%9C%AF)
   - [Java Exception理解与运用.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%20Exception%E7%90%86%E8%A7%A3%E4%B8%8E%E8%BF%90%E7%94%A8.md)
   - [Java Serializable.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%20Serializable.md)
+  - [Java中的双重检查锁.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%E4%B8%AD%E7%9A%84%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81.md)
   - [nginx+tomcat支持ssl部署方案.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2Fnginx%2Btomcat%E6%94%AF%E6%8C%81ssl%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88.md)
   - [Spring事务中try-catch异常分析.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E4%BA%8B%E5%8A%A1%E4%B8%ADtry-catch%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
   - [接口幂等性.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E6%8E%A5%E5%8F%A3%E5%B9%82%E7%AD%89%E6%80%A7.md)
