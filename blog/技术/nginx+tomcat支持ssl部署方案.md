@@ -10,12 +10,12 @@
 以Windows10系统为例，生成证书。
  
 ### 安装OpenSSL
-到http://slproweb.com/products/Win32OpenSSL.html去下载OpenSSL（根据系统选择32位或者64位版本下载安装）。然后安装到指定目录下。
+到 http://slproweb.com/products/Win32OpenSSL.html 去下载OpenSSL（根据系统选择32位或者64位版本下载安装）。然后安装到指定目录下。
 
 ### 安装Nginx
 - 到Nginx官网下载Nginx，我这里下载的是 nginx/Windows-1.12.0 这个版本。
 - 把下载好的压缩包解压出来，拷贝其中的nginx-1.12.0目录到c:\下。并将文件夹名字修改为nginx。这样，Nginx就被安装到了c:\nginx目录下。
-- 进入到C:\nginx目录下，双击nginx.exe文件即可启动服务器。在浏览器地址栏输入http://localhost，如果可以成功访问到Nginx的欢迎界面，则说明安装成功。
+- 进入到C:\nginx目录下，双击nginx.exe文件即可启动服务器。在浏览器地址栏输入 http://localhost ，如果可以成功访问到Nginx的欢迎界面，则说明安装成功。
 
 ### 生成证书
 **1. 创建ssl文件夹用于存放证书**
@@ -124,7 +124,7 @@ nginx.exe -s quit
 start nginx.exe
 ```
 
-即退出Nginx，然后再重新启动它。这时候，在浏览器地址栏输入https://localhost并回车。
+即退出Nginx，然后再重新启动它。这时候，在浏览器地址栏输入 https://localhost 并回车。
 
 这时候，你可能看到“您的连接不是私密连接”的提示，单击页面中的“高级”，并接着单击“继续前往（不安全）”，就可以看到Nginx的欢迎界面了。说明https服务器已经配置成功了。
 
