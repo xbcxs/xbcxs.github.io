@@ -4,6 +4,7 @@
   - [Java中的双重检查锁.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%E4%B8%AD%E7%9A%84%E5%8F%8C%E9%87%8D%E6%A3%80%E6%9F%A5%E9%94%81.md)
   - [nginx+tomcat支持ssl部署方案.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2Fnginx%2Btomcat%E6%94%AF%E6%8C%81ssl%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88.md)
   - [Spring事务中try-catch异常分析.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E4%BA%8B%E5%8A%A1%E4%B8%ADtry-catch%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
+  - [为什么Java进程应用内存大于JVM -Xmx.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E4%B8%BA%E4%BB%80%E4%B9%88Java%E8%BF%9B%E7%A8%8B%E5%BA%94%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E4%BA%8EJVM%20-Xmx.md)
   - [接口幂等性.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E6%8E%A5%E5%8F%A3%E5%B9%82%E7%AD%89%E6%80%A7.md)
   - [简单版分布式选主.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%AE%80%E5%8D%95%E7%89%88%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%89%E4%B8%BB.md)
   - [系统超时登录设计.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%B3%BB%E7%BB%9F%E8%B6%85%E6%97%B6%E7%99%BB%E5%BD%95%E8%AE%BE%E8%AE%A1.md)
