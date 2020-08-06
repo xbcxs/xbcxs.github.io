@@ -11,34 +11,35 @@ HTTP/JSON调用
 
 ### URL命名规范
 
-示例：/服务标识/接口类型/{版本}/顶级命名空间/../子级命名空间/资源[/动作-结果等描述补充]?paramsKey=value
+示例：/服务标识/接口类型/顶级命名空间/../子级命名空间/资源[/动作-结果等描述补充]?paramsKey=value
 
-eg：https://www.exemple.com/api/{v}/library/book[/page-list]
+eg：https://www.exemple.com/api/library/book[/page-list]
 
 1. 全部小写。
-2. 用中杠-不用下杠_。
-3. 参数列表要encode。
-4. URI中的名词表示资源集合。没有[/动作-结果等描述补充复数]时资源用复数表示，否则单数。
-5. 命名空间描述：单个名词不满足描述的情况下可多词连写（牺牲一定可阅读性）。eg.mywork  
-6. [/动作-结果等描述补充]描述：多词用-连接（保证可阅读性）。例如：page-list
+2. 版本号放到header
+3. 用中杠-不用下杠_。
+4. 参数列表要encode。
+5. URI中的名词表示资源集合。没有[/动作-结果等描述补充复数]时资源用复数表示，否则单数。
+6. 命名空间描述：单个名词不满足描述的情况下可多词连写（牺牲一定可阅读性）。eg.mywork  
+7. [/动作-结果等描述补充]描述：多词用_连接（保证可阅读性）。例如：page_list
 
 **命名示例**
 
 1. 获取书籍列表 GET /api/v1/book/list `行参数：查询参数`
-2. 获取书籍分页 GET /api/v1/book/page-list `行参数：size和page为分页参数`
+2. 获取书籍分页 GET /api/v1/book/page_list `行参数：size和page为分页参数`
 3. 获取书籍详情 GET /api/v1/book/info?id= `行参数：id为主键`
 4. 新增书籍资源 POST /api/v1/book/save `body参数：主键之外的参数`
-5. 新增返回结果 POST /api/v1/book/back-save `body参数：主键之外的参数`
-6. 批量新增书籍 POST /api/v1/book/batch-save `body参数：主键之外的参数`
+5. 新增返回结果 POST /api/v1/book/back_save `body参数：主键之外的参数`
+6. 批量新增书籍 POST /api/v1/book/batch_save `body参数：主键之外的参数`
 7. 修改书籍资源 PUT  /api/v1/book/update `body参数：更新依据主键id,以及其他参数`
-8. 批量修改书籍 PUT  /api/v1/book/batch-edit `body参数：更新依据主键 id,以及其他参数`
+8. 批量修改书籍 PUT  /api/v1/book/batch_edit `body参数：更新依据主键 id,以及其他参数`
 9. 删除书籍资源 DELETE /api/v1/book/delete `body参数：主键id`
-10. 批量删除书籍 DELETE /api/v1/book/batch-delete `body参数：主键id`
+10. 批量删除书籍 DELETE /api/v1/book/batch_delete `body参数：主键id`
 
 ### 请求规范
 1. 请求Request Headers  
 普通数据:Content-Type:application/json;charset=UTF-8  
-文件数据:Content-Type:multipart/form-data
+文件数据:Content-Type:multipart/form_data
 2. 响应Response Headers  
 普通数据：Content-Type:application/json;charset=UTF-8
 3. URI的末尾不要添加“/”，多一个斜杠，语义完全不同，究竟是目录，还是资源。 
