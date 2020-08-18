@@ -8,6 +8,8 @@
   - [Spring3.2升级Springboot2.1.4相关问题记录.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring3.2%E5%8D%87%E7%BA%A7Springboot2.1.4%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95.md)
   - [Spring事务中try-catch异常分析.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E4%BA%8B%E5%8A%A1%E4%B8%ADtry-catch%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90.md)
   - [Spring事务后事件实现.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E4%BA%8B%E5%8A%A1%E5%90%8E%E4%BA%8B%E4%BB%B6%E5%AE%9E%E7%8E%B0.md)
+  - [Spring几种事件机制.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E5%87%A0%E7%A7%8D%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6.md)
+  - [Spring方法嵌套调用事务失效问题.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FSpring%E6%96%B9%E6%B3%95%E5%B5%8C%E5%A5%97%E8%B0%83%E7%94%A8%E4%BA%8B%E5%8A%A1%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98.md)
   - [为什么Java进程应用内存大于JVM -Xmx.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E4%B8%BA%E4%BB%80%E4%B9%88Java%E8%BF%9B%E7%A8%8B%E5%BA%94%E7%94%A8%E5%86%85%E5%AD%98%E5%A4%A7%E4%BA%8EJVM%20-Xmx.md)
   - [接口幂等性.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E6%8E%A5%E5%8F%A3%E5%B9%82%E7%AD%89%E6%80%A7.md)
   - [简单版分布式选主.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%AE%80%E5%8D%95%E7%89%88%E5%88%86%E5%B8%83%E5%BC%8F%E9%80%89%E4%B8%BB.md)
