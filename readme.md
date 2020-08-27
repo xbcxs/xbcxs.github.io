@@ -1,4 +1,7 @@
 - [企业应用研发设计](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E4%BC%81%E4%B8%9A%E5%BA%94%E7%94%A8%E7%A0%94%E5%8F%91%E8%AE%BE%E8%AE%A1)
+- [开发日志](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97)
+  - [Spring事务失效问题20200804.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%2FSpring%E4%BA%8B%E5%8A%A1%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%9820200804.md)
+  - [内存溢出20200710.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97%2F%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA20200710.md)
 - [技术](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E6%8A%80%E6%9C%AF)
   - [Java Exception理解与运用.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%20Exception%E7%90%86%E8%A7%A3%E4%B8%8E%E8%BF%90%E7%94%A8.md)
   - [Java Serializable.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2FJava%20Serializable.md)
@@ -22,5 +25,3 @@
   - [VO、DTO、DO、PO区别.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E8%A7%84%E8%8C%83%2FVO%E3%80%81DTO%E3%80%81DO%E3%80%81PO%E5%8C%BA%E5%88%AB.md)
   - [产品与项目代码管理思考.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E8%A7%84%E8%8C%83%2F%E4%BA%A7%E5%93%81%E4%B8%8E%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E6%80%9D%E8%80%83.md)
   - [基于产品的集成开发参考.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E8%A7%84%E8%8C%83%2F%E5%9F%BA%E4%BA%8E%E4%BA%A7%E5%93%81%E7%9A%84%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83.md)
-- [问题处理记录](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E8%AE%B0%E5%BD%95)
-  - [内存溢出20200710.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E8%AE%B0%E5%BD%95%2F%E5%86%85%E5%AD%98%E6%BA%A2%E5%87%BA20200710.md)
