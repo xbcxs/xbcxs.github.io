@@ -20,6 +20,7 @@
   - [系统超时登录设计.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E7%B3%BB%E7%BB%9F%E8%B6%85%E6%97%B6%E7%99%BB%E5%BD%95%E8%AE%BE%E8%AE%A1.md)
   - [远程调用另一台windows程序.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%8A%80%E6%9C%AF%2F%E8%BF%9C%E7%A8%8B%E8%B0%83%E7%94%A8%E5%8F%A6%E4%B8%80%E5%8F%B0windows%E7%A8%8B%E5%BA%8F.md)
 - [未分类](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB)
+  - [MySQL-8.0.21 Windows安装记录.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB%2FMySQL-8.0.21%20Windows%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95.md)
   - [Oracle startup ORA-27102 out of memory.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E6%9C%AA%E5%88%86%E7%B1%BB%2FOracle%20startup%20ORA-27102%20out%20of%20memory.md)
 - [规范](https://github.com/xbcxs/xbcxs.github.io/tree/master/blog%2F%E8%A7%84%E8%8C%83)
   - [HTTP API规范.md](https://github.com/xbcxs/xbcxs.github.io/blob/master/blog%2F%E8%A7%84%E8%8C%83%2FHTTP%20API%E8%A7%84%E8%8C%83.md)
