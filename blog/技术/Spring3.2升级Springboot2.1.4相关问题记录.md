@@ -533,6 +533,15 @@ public String getInstanceProcessId() {
     <version>1.2.68</version>
 </dependency>
 ```
+## SpringMvc框架下UriComponentsBuilder版本变更影响
+SpringMvc框架使用的jar版本spring-web-3.1.0.RELEASE.jar
+
+SpringBoot框架使用的jar版本spring-web-5.1.6.RELEASE.jar
+
+UriComponentsBuilder.fromPath()方法逻辑变更：  
+旧版本jar中支持//  
+新版本jar中将连续的/全部转成单个/，导致把原来 http:// 转换成了 http:/  
+        
 
 ## 其他组件接入修复
 ### Flyway
